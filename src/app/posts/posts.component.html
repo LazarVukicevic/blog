@@ -1,8 +1,10 @@
-<p>posts works!</p>
+<button routerLink="/admin" class="admin-btn">Log in</button>
 
-<div *ngFor="let post of posts">
-    <p>{{post.title}}</p>
+<h1>Blog Posts</h1>
+
+<div *ngFor="let post of posts" class="blog-posts">
+    <h2>{{post.title}}</h2>
     <p>{{post.content}}</p>
     <p>{{post.publicationDate.substring(0, 10)}}</p>
-    <p>--------------------------------</p>
+    <hr>
 </div>

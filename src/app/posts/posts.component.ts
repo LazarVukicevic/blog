@@ -15,7 +15,7 @@ export class PostsComponent implements OnInit {
       this.blogService.getBlogPosts().subscribe(
         posts => {
           this.posts = posts;
-          console.log(this.posts);
+          // console.log(this.posts);
         },
         error => {
           console.error('Error fetching posts: ', error);

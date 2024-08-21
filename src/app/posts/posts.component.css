@@ -1,0 +1,21 @@
+.blog-posts {
+    box-sizing: border-box;
+    display: block;          /* Ensures block layout for proper width and centering */
+    padding: 20px;
+    margin: 20px auto;       /* Center the posts horizontally */
+    max-width: 800px;        /* Limits the width of the content */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Optional: gives a light background for better readability */
+    border-radius: 10px;     /* Optional: adds rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+h2 {
+    text-align: center;      /* Centers the title */
+    font-size: 24px;         /* Slightly larger for emphasis */
+}
+
+.admin-btn {
+    float: right;
+}

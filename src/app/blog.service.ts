@@ -18,6 +18,10 @@ export class BlogService {
     });
   }
 
+  insertBlogPost(post: Post): Observable<Post> {
+    return this.http.post<Post>('http://localhost:5178/api/Blog/postss', post);
+  }
+
 
   
 
