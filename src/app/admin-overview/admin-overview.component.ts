@@ -29,5 +29,6 @@ export class AdminOverviewComponent {
       error => {
         console.error('Error inserting blog post: ', error);
       });
+    location.reload();
   }
 }

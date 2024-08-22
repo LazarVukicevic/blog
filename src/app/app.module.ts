@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { PostsComponent } from './posts/posts.component';
 import { AdminOverviewComponent } from './admin-overview/admin-overview.component';
+import { BlogPostDetailsComponent } from './blog-post-details/blog-post-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    AdminOverviewComponent
+    AdminOverviewComponent,
+    BlogPostDetailsComponent
   ],
   imports: [
     BrowserModule,
