@@ -9,6 +9,7 @@
     background-color: #f9f9f9; /* Optional: gives a light background for better readability */
     border-radius: 10px;     /* Optional: adds rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    white-space: pre-line;
 }
 
 h2 {
