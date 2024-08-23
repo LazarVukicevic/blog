@@ -27,6 +27,10 @@ export class BlogService {
     return this.http.post<Post>('http://localhost:5178/api/Blog/postss', post);
   }
 
+  updateBlogPost(post: Post): Observable<Post> {
+    return this.http.put<Post>(`http://localhost:5178/api/Blog/posts/${post.postId}`, post);
+  }
+
 
   
 
