@@ -31,7 +31,7 @@
 </div>
 <div class="delete-post">
     <h2>Delete Blog Post</h2>
-    <select #id (change)="onSelected(+id.value)" name="post-list" id="post-list">
+    <select #id (change)="onSelected(+id.value)"  name="post-list" id="post-list">
         <option *ngFor="let post of posts" [value]="post.postId">{{ post.title }}</option>
     </select>
     <input (click)="myFunc()" class="delete-button" type="submit" value="Delete">

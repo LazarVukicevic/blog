@@ -8,7 +8,7 @@ import { BlogService } from '../blog.service';
   styleUrl: './admin-overview.component.css'
 })
 export class AdminOverviewComponent implements OnInit {
-  selectDeletePost = 0;
+  selectDeletePost = 1;
   posts: Post[] = [];
   constructor(private blogService: BlogService) { }
 
