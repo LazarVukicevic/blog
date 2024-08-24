@@ -16,7 +16,7 @@ import { BlogPostDetailsComponent } from './blog-post-details/blog-post-details.
     AppComponent,
     PostsComponent,
     AdminOverviewComponent,
-    BlogPostDetailsComponent
+    BlogPostDetailsComponent,
   ],
   imports: [
     BrowserModule,

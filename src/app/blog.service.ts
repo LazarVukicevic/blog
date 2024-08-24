@@ -31,6 +31,10 @@ export class BlogService {
     return this.http.put<Post>(`http://localhost:5178/api/Blog/posts/${post.postId}`, post);
   }
 
+  deleteBlogPost(id: any): Observable<Post> {
+    return this.http.delete<Post>(`http://localhost:5178/api/Blog/posts/${id}`)
+  }
+
 
   
 
