@@ -11,8 +11,9 @@ import { PostsComponent } from './posts/posts.component';
 import { AdminOverviewComponent } from './admin-overview/admin-overview.component';
 import { BlogPostDetailsComponent } from './blog-post-details/blog-post-details.component';
 
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatDividerModule } from '@angular/material/divider';
     PostsComponent,
     AdminOverviewComponent,
     BlogPostDetailsComponent,
+    BlogNavbarComponent,
   ],
   imports: [
     BrowserModule,

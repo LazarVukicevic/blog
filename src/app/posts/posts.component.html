@@ -1,9 +1,12 @@
-<button mat-button routerLink="/admin" class="admin-btn">Log in</button>
-<h1>Blog Posts</h1>
-
+<app-blog-navbar></app-blog-navbar>
+<div class="title-holder">
+    <h1>Blog Posts</h1>
+</div>
 <div *ngFor="let post of posts" class="blog-posts">
     <h2><a  [routerLink]="['',post.postId]">{{post.title}}</a></h2>
-    <p>{{post.content}}</p>
+    <p *ngIf="post.content.length > 100">{{post.content.substring(0, 100)}}...</p>
+    <p *ngIf="post.content.length <= 100">{{post.content}}</p>
     <p>{{post.publicationDate.substring(0, 10)}}</p>
+    <a [routerLink]="['', post.postId]">Read more...</a>
     <mat-divider></mat-divider>
 </div>
