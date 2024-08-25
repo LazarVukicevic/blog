@@ -1,10 +1,9 @@
-<button routerLink="/admin" class="admin-btn">Log in</button>
-
+<button mat-button routerLink="/admin" class="admin-btn">Log in</button>
 <h1>Blog Posts</h1>
 
 <div *ngFor="let post of posts" class="blog-posts">
     <h2><a  [routerLink]="['',post.postId]">{{post.title}}</a></h2>
     <p>{{post.content}}</p>
     <p>{{post.publicationDate.substring(0, 10)}}</p>
-    <hr>
+    <mat-divider></mat-divider>
 </div>

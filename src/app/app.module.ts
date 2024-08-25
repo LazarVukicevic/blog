@@ -11,6 +11,9 @@ import { PostsComponent } from './posts/posts.component';
 import { AdminOverviewComponent } from './admin-overview/admin-overview.component';
 import { BlogPostDetailsComponent } from './blog-post-details/blog-post-details.component';
 
+import {MatButtonModule} from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +26,8 @@ import { BlogPostDetailsComponent } from './blog-post-details/blog-post-details.
     AppRoutingModule,
     RouterModule,
     FormsModule,
+    MatButtonModule,
+    MatDividerModule,
   ],
   providers: [
     provideClientHydration(),
